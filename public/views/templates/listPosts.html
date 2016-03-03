@@ -1,0 +1,9 @@
+Review Page
+
+<div class="row">
+    <div ng-repeat="post in blogPosts" ng-model="blogPosts" class="well col-md-3">
+        <p>Blog Post Title: {{post.title}}</p>
+        <p>Blog Post Date: {{post.date | date }}</p>
+        <a href="#editPost"><button ng-click="storeID(post._id)" class="btn btn-danger">Update and Review</button></a>
+    </div>
+</div>
